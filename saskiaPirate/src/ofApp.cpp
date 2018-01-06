@@ -16,6 +16,7 @@ void ofApp::setup(){
 void ofApp::update(){
     
     counter++;
+    objPos++;
 }
 
 //--------------------------------------------------------------
@@ -39,6 +40,9 @@ void ofApp::draw(){
     }
     else if (showDraw == 4) {
         sas4(counter, selector); // http://sasj.tumblr.com/post/162953278415/geometric-animations-170713
+    }
+    else if (showDraw ==5) {
+        sas5(counter, selector); // http://sasj.tumblr.com/post/160085368820/geometric-animations-170428
     }
     
     
@@ -279,17 +283,12 @@ void ofApp::sas4(int phase, bool selector) {
     ofSetBackgroundColor(0);
     ofSetLineWidth(4);
     
-    ofPath path;
-    path.setMode(ofPath::POLYLINES);
-    path.setCircleResolution(200);
-    path.setFilled(false);
-    path.setStrokeWidth(4);
-    path.setCurveResolution(200);
+    
     
     float gridSize = ofGetWidth()/5;
     float arcDist = gridSize/18;
 
-    float rotate = ofMap(sin(ofDegToRad(phase*2)),-1,1,0,360);
+    float rotate;
     
     int upArcBegin = 180-rotate;
     int upArcEnd = 360-rotate;
@@ -300,23 +299,48 @@ void ofApp::sas4(int phase, bool selector) {
     ofPushMatrix();
     ofSetRectMode(OF_RECTMODE_CENTER);
     ofNoFill();
-    ofDrawRectangle(ofGetWidth()/2, ofGetHeight()/2, gridSize*3, gridSize*3);
-    ofSetColor(red);
-    ofDrawRectangle(ofGetWidth()/2, ofGetHeight()/2, gridSize*2, gridSize*2);
-    ofSetColor(255);
-    ofDrawRectangle(ofGetWidth()/2, ofGetHeight()/2, gridSize, gridSize);
+    ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
+    if (selector == true) {
+        ofDrawRectangle(0, 0, gridSize*3, gridSize*3);
+        ofSetColor(red);
+        ofDrawRectangle(0,0, gridSize*2, gridSize*2);
+        ofSetColor(255);
+        ofDrawRectangle(0,0, gridSize, gridSize);
+    } else {
+        ofRotate(phase);
+        ofDrawRectangle(0, 0, gridSize*3, gridSize*3);
+        ofSetColor(red);
+        ofRotate(phase);
+        ofDrawRectangle(0, 0, gridSize*2, gridSize*2);
+        ofSetColor(255);
+        ofRotate(phase);
+        ofDrawRectangle(0, 0, gridSize, gridSize);
+    }
+    
     ofFill();
     ofPopMatrix();
     
     ofPushMatrix();
     ofTranslate(gridSize, gridSize);
+    int offset = 0;
     
     for(int j=0; j<4; j++) {
         for(int k=0; k<4; k++) {
             
+            ofPath path;
+            path.setMode(ofPath::POLYLINES);
+            path.setCircleResolution(200);
+            path.setFilled(false);
+            path.setStrokeWidth(4);
+            path.setCurveResolution(200);
+            
             ofPushMatrix();
             ofTranslate(gridSize*k, gridSize*j);
-            //int offset = ofMap(j*k, 0,16, 0, 90); // WHY OH WHY DOES IT NOT WORK HERE
+            if(selector == true) {
+                rotate = ofMap(sin(ofDegToRad(phase*2-offset)),-1,1,0,360);
+            } else {
+                rotate = ofMap(ofSignedNoise(phase*0.02-offset),-1,1,0,360);
+            }
             
             for (int i=0; i<4; i++) {
                 path.setStrokeColor(255);
@@ -328,8 +352,9 @@ void ofApp::sas4(int phase, bool selector) {
                 }
                 path.draw();
             }
-            
             ofPopMatrix();
+            
+            offset+=2;
             
         }
     }
@@ -338,45 +363,106 @@ void ofApp::sas4(int phase, bool selector) {
     
     ofPushMatrix();
     ofTranslate(gridSize+gridSize/2, gridSize+gridSize/2);
-    
+    offset = 0;
     for(int j=0; j<3; j++) {
         for(int k=0; k<3; k++) {
+            
+            ofPath path;
+            path.setMode(ofPath::POLYLINES);
+            path.setCircleResolution(200);
+            path.setFilled(false);
+            path.setStrokeWidth(4);
+            path.setCurveResolution(200);
+            
             ofPushMatrix();
             ofTranslate(gridSize*k, gridSize*j);
-            //int offset = ofMap(j*k, 0,16, 0, 90); // WHY OH WHY DOES IT NOT WORK HERE
+            if(selector == true) {
+                 rotate = ofMap(sin(ofDegToRad(phase*2-offset)),-1,1,0,360);
+            } else {
+                rotate = ofMap(ofSignedNoise(phase*0.02-offset),-1,1,0,360);
+            }
             
-//            for (int i=0; i<4; i++) {
-//                path.setStrokeColor(red);
-//                path.newSubPath();
-//                if (i%2 == 0) {
-//                    path.arc(0,0, arcDist*i+arcDist, arcDist*i+arcDist, 0+rotate,180+rotate);
-//                } else {
-//                    path.arc(0,0, arcDist*i+arcDist, arcDist*i+arcDist, 180-rotate, 360-rotate);
-//                }
-//                path.draw();
-//            }
+            
 
             for (int i=0; i<4; i++) {
                 path.setStrokeColor(red);
                 path.newSubPath();
-                if (i%1 == 0) {
+                if (i%2 == 0) {
                     path.arc(0,0, arcDist*i+arcDist, arcDist*i+arcDist, 180-rotate,360-rotate);
                 } else {
                     path.arc(0,0, arcDist*i+arcDist, arcDist*i+arcDist, 0+rotate,180+rotate);
                 }
                 path.draw();
             }
-            
+
             ofPopMatrix();
-    
+            
+            offset+=2;
         }
     }
     ofPopMatrix();
 
+}
+
+
+
+//--------------------------------------------------------------
+void ofApp::sas5(int phase, bool selector) {
+    ofSetBackgroundColor(30);
+    ofColor blue = ofColor(0,168,161);
+    ofColor red = ofColor(198,68,126);
+    ofNoFill();
+    ofSetLineWidth(5);
+    int maxDist = 100;
+    float centerToMinus = ofMap(sin(ofDegToRad(counter)), -1,1,0, -maxDist);
+    float centerToPlus = ofMap(sin(ofDegToRad(counter)), -1,1,0, maxDist);
+
+    ofPushMatrix();
+    ofTranslate(ofGetHeight()/2-maxDist, ofGetWidth()/2);
+    ofRotate(45);
+    ofSetColor(blue);
+    ofBeginShape();
+    ofVertex(-maxDist, centerToMinus);
+    ofVertex(centerToMinus, centerToMinus);
+    ofVertex(centerToMinus, -maxDist);
+    ofVertex(centerToPlus, -maxDist);
+    ofVertex(centerToPlus, centerToMinus);
+    ofVertex(maxDist, centerToMinus);
+    ofVertex(maxDist, centerToPlus);
+    ofVertex(centerToPlus, centerToPlus);
+    ofVertex(centerToPlus, maxDist);
+    ofVertex(centerToMinus, maxDist);
+    ofVertex(centerToMinus,centerToPlus);
+    ofVertex(-maxDist, centerToPlus);
+    ofVertex(-maxDist, centerToMinus);
+    ofEndShape();
+    ofPopMatrix();
+    
+    ofPushMatrix();
+    ofTranslate(ofGetHeight()/2+maxDist, ofGetWidth()/2);
+    ofRotate(45);
+    ofSetColor(red);
+    ofBeginShape();
+    ofVertex(-maxDist, maxDist);
+    ofVertex(-maxDist, centerToPlus);
+    ofVertex(maxDist, centerToPlus);
+    ofVertex(maxDist, maxDist);
+    ofVertex(centerToPlus, maxDist);
+    ofVertex(centerToPlus, -maxDist);
+    ofVertex(maxDist, -maxDist);
+    ofVertex(maxDist, centerToMinus);
+    ofVertex(-maxDist, centerToMinus);
+    ofVertex(-maxDist, -maxDist);
+    ofVertex(centerToMinus, -maxDist);
+    ofVertex(centerToMinus, maxDist);
+    ofVertex(-maxDist, maxDist);
+    ofEndShape();
+    ofPopMatrix();
+    
+    ofFill();
     
     
 }
-
 
 
 
