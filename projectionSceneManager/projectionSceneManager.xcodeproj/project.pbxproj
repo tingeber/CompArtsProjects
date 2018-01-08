@@ -14,6 +14,7 @@
 		21B18AC78EBFC1FD28C614D5 /* TextureMappingMode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B16277019B0C4B684E1B063E /* TextureMappingMode.cpp */; };
 		23963D6D8F0085D5DD2DF394 /* TogglePerspectiveCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 655142313A378162E3929785 /* TogglePerspectiveCmd.cpp */; };
 		25F5CD753AF35B53464E56AE /* MvTexCoordCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0739F09627790055C959BBF4 /* MvTexCoordCmd.cpp */; };
+		2673F5972003C786005E1515 /* ConflictingResolutions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2673F5952003C786005E1515 /* ConflictingResolutions.cpp */; };
 		26AB0212200138BB001BB541 /* ConsciousCompetence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AB0210200138BB001BB541 /* ConsciousCompetence.cpp */; };
 		26AB021520014DBB001BB541 /* Incompetence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AB021420014DBB001BB541 /* Incompetence.cpp */; };
 		26AB021920016A74001BB541 /* UnconsciousCompetence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AB021720016A74001BB541 /* UnconsciousCompetence.cpp */; };
@@ -165,6 +166,8 @@
 		231337763726D333E0B3D56C /* AddGridColCmd.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = AddGridColCmd.cpp; path = ../../../addons/ofxPiMapper/src/Commands/AddGridColCmd.cpp; sourceTree = SOURCE_ROOT; };
 		23A4F0C9DE47BA73B3E49EDE /* ScaleWidget.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ScaleWidget.h; path = ../../../addons/ofxPiMapper/src/Gui/Widgets/ScaleWidget.h; sourceTree = SOURCE_ROOT; };
 		25322223D3976D5F33DCCBF6 /* MvAllTexCoordsCmd.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MvAllTexCoordsCmd.h; path = ../../../addons/ofxPiMapper/src/Commands/MvAllTexCoordsCmd.h; sourceTree = SOURCE_ROOT; };
+		2673F5952003C786005E1515 /* ConflictingResolutions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConflictingResolutions.cpp; sourceTree = "<group>"; };
+		2673F5962003C786005E1515 /* ConflictingResolutions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConflictingResolutions.h; sourceTree = "<group>"; };
 		26A541233BC6F736E758F718 /* ofxJSONElement.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxJSONElement.h; path = ../../../addons/ofxJSON/src/ofxJSONElement.h; sourceTree = SOURCE_ROOT; };
 		26AB0210200138BB001BB541 /* ConsciousCompetence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConsciousCompetence.cpp; sourceTree = "<group>"; };
 		26AB0211200138BB001BB541 /* ConsciousCompetence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsciousCompetence.h; sourceTree = "<group>"; };
@@ -680,6 +683,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				2673F5952003C786005E1515 /* ConflictingResolutions.cpp */,
+				2673F5962003C786005E1515 /* ConflictingResolutions.h */,
 				26AB021720016A74001BB541 /* UnconsciousCompetence.cpp */,
 				26AB021820016A74001BB541 /* UnconsciousCompetence.h */,
 				26AB021420014DBB001BB541 /* Incompetence.cpp */,
@@ -899,6 +904,7 @@
 				F3EACD31EE5E141FF66C48BD /* Info.cpp in Sources */,
 				EE5F54F81FD535E300A10A3A /* SceneManager.cpp in Sources */,
 				92527EF632E7EC0E96BC329C /* MediaServer.cpp in Sources */,
+				2673F5972003C786005E1515 /* ConflictingResolutions.cpp in Sources */,
 				DB8FC60C7512DB810C92625B /* DirectoryWatcher.cpp in Sources */,
 				EA700B09626C8413C92EF860 /* Gui.cpp in Sources */,
 				F06AE014F869282B7F7CE84C /* ScaleWidget.cpp in Sources */,

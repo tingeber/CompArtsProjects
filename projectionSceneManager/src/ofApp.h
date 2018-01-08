@@ -8,6 +8,7 @@
 #include "Incompetence.h"
 #include "ConsciousCompetence.h"
 #include "UnconsciousCompetence.h"
+#include "ConflictingResolutions.h"
 
 class ofApp : public ofBaseApp {
 	public:
@@ -37,4 +38,6 @@ class ofApp : public ofBaseApp {
         ofImage cubeIso;
 
         SceneManager sceneManager;
+    
+        ConflictingResolutions * conflictingResolutions;
 };

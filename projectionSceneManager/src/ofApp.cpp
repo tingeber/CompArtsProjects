@@ -50,6 +50,10 @@ void ofApp::setup(){
     unconsciousCompetence3->setName("Unc Comp 3");
     unconsciousCompetence3->setStartPos(340);
     
+    conflictingResolutions = new ConflictingResolutions();
+    conflictingResolutions->setup();
+    piMapper.registerFboSource(conflictingResolutions);
+    
  
     
     piMapper.setup();
