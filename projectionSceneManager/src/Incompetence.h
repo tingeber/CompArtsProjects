@@ -18,7 +18,9 @@ class Incompetence : public ofx::piMapper::FboSource {
         void setStartPos(int);
         int startPos = 0;
     
+        void initDraw();
         void runUtilityUpdates();
+        void printHelperText();
     
         int halfBeatCounter;
         int beatCounter;
@@ -26,13 +28,11 @@ class Incompetence : public ofx::piMapper::FboSource {
         int beatsInMinute;
         int startFrameCounter;
         int frameCounter;
+        float startTime;
     
-        vector<float> trianglePos1;
+        vector <float> trianglePos1;
         vector <float> trianglePos2;
         vector <float> triangleHeight;
-    
-        float multiplier;
-        float pulse;
     
         int maxTriangles = 50;
     
@@ -44,11 +44,7 @@ class Incompetence : public ofx::piMapper::FboSource {
         float gColor;
         float bColor;
     
-    
-    
-    ofTrueTypeFont font;
-    
-    float startTime;
+        ofTrueTypeFont font;
     
 };
 

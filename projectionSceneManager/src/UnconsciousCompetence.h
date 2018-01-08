@@ -17,7 +17,9 @@ class UnconsciousCompetence : public ofx::piMapper::FboSource {
         void setStartPos(int);
         int startPos = 0;
     
+        void initDraw();
         void runUtilityUpdates();
+        void printHelperText();
     
         int halfBeatCounter;
         int beatCounter;
@@ -30,23 +32,9 @@ class UnconsciousCompetence : public ofx::piMapper::FboSource {
         vector<ofVec2f> triangle2;
         vector<ofVec2f> triangle3;
         vector<float> transparency;
-
-    
-        float multiplier;
-        float pulse;
-    
-        int maxTriangles = 50;
     
         float noiseValue;
-    
-        float growth;
-    
-        float rColor;
-        float gColor;
-        float bColor;
-    
-    
-        void helperText();
+
         ofTrueTypeFont font;
     
 };

@@ -14,7 +14,9 @@ class ConsciousCompetence : public ofx::piMapper::FboSource {
 
         void starTriangles();
     
+        void initDraw();
         void runUtilityUpdates();
+        void printHelperText();
     
         int halfBeatCounter;
         int beatCounter;
@@ -22,10 +24,7 @@ class ConsciousCompetence : public ofx::piMapper::FboSource {
         int beatsInMinute;
         int startFrameCounter;
         int frameCounter;
-    
-        float multiplier;
-        float pulse;
-        
+            
         float maxStars = 120;
         float currentMaxStars = 0;
         float starSpeed = 0.2;
@@ -37,7 +36,7 @@ class ConsciousCompetence : public ofx::piMapper::FboSource {
         vector<float> starPos2;
         vector<float> scaleTriangle;
     
-    ofTrueTypeFont font;
+        ofTrueTypeFont font;
     
 };
 
