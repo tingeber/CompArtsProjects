@@ -96,7 +96,7 @@ void Incompetence::draw(){
 
     ofPopStyle();
     
-    // printHelperText(); // prints useful information (frame rate, milis, beats) at mouse position
+    printHelperText(); // prints useful information (frame rate, milis, beats) at mouse position
 }
 
 //--------------------------------------------------------------

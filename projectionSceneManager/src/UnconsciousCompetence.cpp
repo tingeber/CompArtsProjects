@@ -78,7 +78,7 @@ void UnconsciousCompetence::draw(){
 
     ofPopStyle();
     
-    //printHelperText(); // helper text at mouse position with frame rate, milis, bars etc
+    printHelperText(); // helper text at mouse position with frame rate, milis, bars etc
 }
 
 

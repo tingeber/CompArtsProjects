@@ -15,6 +15,18 @@
 		23963D6D8F0085D5DD2DF394 /* TogglePerspectiveCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 655142313A378162E3929785 /* TogglePerspectiveCmd.cpp */; };
 		25F5CD753AF35B53464E56AE /* MvTexCoordCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0739F09627790055C959BBF4 /* MvTexCoordCmd.cpp */; };
 		2673F5972003C786005E1515 /* ConflictingResolutions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2673F5952003C786005E1515 /* ConflictingResolutions.cpp */; };
+		2673F5AD2003CE4D005E1515 /* LineMoveSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2673F59D2003CE4C005E1515 /* LineMoveSource.cpp */; };
+		2673F5AE2003CE4D005E1515 /* TendrilsSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2673F59E2003CE4C005E1515 /* TendrilsSource.cpp */; };
+		2673F5AF2003CE4D005E1515 /* WhiteSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2673F59F2003CE4C005E1515 /* WhiteSource.cpp */; };
+		2673F5B02003CE4D005E1515 /* BlackSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2673F5A12003CE4C005E1515 /* BlackSource.cpp */; };
+		2673F5B12003CE4D005E1515 /* DepthSquaresSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2673F5A22003CE4C005E1515 /* DepthSquaresSource.cpp */; };
+		2673F5B22003CE4D005E1515 /* ParticlesSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2673F5A32003CE4C005E1515 /* ParticlesSource.cpp */; };
+		2673F5B32003CE4D005E1515 /* AbstractSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2673F5A42003CE4C005E1515 /* AbstractSource.cpp */; };
+		2673F5B42003CE4D005E1515 /* SimpleLinesSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2673F5A72003CE4C005E1515 /* SimpleLinesSource.cpp */; };
+		2673F5B52003CE4D005E1515 /* SquidSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2673F5A82003CE4C005E1515 /* SquidSource.cpp */; };
+		2673F5B62003CE4D005E1515 /* FlashSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2673F5AB2003CE4D005E1515 /* FlashSource.cpp */; };
+		2673F5B92003DEA6005E1515 /* FairyGarden.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2673F5B72003DEA6005E1515 /* FairyGarden.cpp */; };
+		2675CE1A2005FC7B00203033 /* MovingWordsSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2675CE192005FC7B00203033 /* MovingWordsSource.cpp */; };
 		26AB0212200138BB001BB541 /* ConsciousCompetence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AB0210200138BB001BB541 /* ConsciousCompetence.cpp */; };
 		26AB021520014DBB001BB541 /* Incompetence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AB021420014DBB001BB541 /* Incompetence.cpp */; };
 		26AB021920016A74001BB541 /* UnconsciousCompetence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AB021720016A74001BB541 /* UnconsciousCompetence.cpp */; };
@@ -168,6 +180,31 @@
 		25322223D3976D5F33DCCBF6 /* MvAllTexCoordsCmd.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MvAllTexCoordsCmd.h; path = ../../../addons/ofxPiMapper/src/Commands/MvAllTexCoordsCmd.h; sourceTree = SOURCE_ROOT; };
 		2673F5952003C786005E1515 /* ConflictingResolutions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConflictingResolutions.cpp; sourceTree = "<group>"; };
 		2673F5962003C786005E1515 /* ConflictingResolutions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConflictingResolutions.h; sourceTree = "<group>"; };
+		2673F5982003CE4B005E1515 /* LineMoveSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineMoveSource.h; sourceTree = "<group>"; };
+		2673F5992003CE4B005E1515 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		2673F59A2003CE4B005E1515 /* DepthSquaresSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepthSquaresSource.h; sourceTree = "<group>"; };
+		2673F59B2003CE4B005E1515 /* ParticlesSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticlesSource.h; sourceTree = "<group>"; };
+		2673F59C2003CE4B005E1515 /* SimpleLinesSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleLinesSource.h; sourceTree = "<group>"; };
+		2673F59D2003CE4C005E1515 /* LineMoveSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LineMoveSource.cpp; sourceTree = "<group>"; };
+		2673F59E2003CE4C005E1515 /* TendrilsSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TendrilsSource.cpp; sourceTree = "<group>"; };
+		2673F59F2003CE4C005E1515 /* WhiteSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WhiteSource.cpp; sourceTree = "<group>"; };
+		2673F5A02003CE4C005E1515 /* FlashSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashSource.h; sourceTree = "<group>"; };
+		2673F5A12003CE4C005E1515 /* BlackSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlackSource.cpp; sourceTree = "<group>"; };
+		2673F5A22003CE4C005E1515 /* DepthSquaresSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DepthSquaresSource.cpp; sourceTree = "<group>"; };
+		2673F5A32003CE4C005E1515 /* ParticlesSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticlesSource.cpp; sourceTree = "<group>"; };
+		2673F5A42003CE4C005E1515 /* AbstractSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractSource.cpp; sourceTree = "<group>"; };
+		2673F5A52003CE4C005E1515 /* AbstractSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractSource.h; sourceTree = "<group>"; };
+		2673F5A62003CE4C005E1515 /* SquidSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquidSource.h; sourceTree = "<group>"; };
+		2673F5A72003CE4C005E1515 /* SimpleLinesSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleLinesSource.cpp; sourceTree = "<group>"; };
+		2673F5A82003CE4C005E1515 /* SquidSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SquidSource.cpp; sourceTree = "<group>"; };
+		2673F5A92003CE4C005E1515 /* WhiteSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteSource.h; sourceTree = "<group>"; };
+		2673F5AA2003CE4D005E1515 /* BlackSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackSource.h; sourceTree = "<group>"; };
+		2673F5AB2003CE4D005E1515 /* FlashSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlashSource.cpp; sourceTree = "<group>"; };
+		2673F5AC2003CE4D005E1515 /* TendrilsSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TendrilsSource.h; sourceTree = "<group>"; };
+		2673F5B72003DEA6005E1515 /* FairyGarden.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FairyGarden.cpp; sourceTree = "<group>"; };
+		2673F5B82003DEA6005E1515 /* FairyGarden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FairyGarden.h; sourceTree = "<group>"; };
+		2675CE182005FC7B00203033 /* MovingWordsSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingWordsSource.h; sourceTree = "<group>"; };
+		2675CE192005FC7B00203033 /* MovingWordsSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovingWordsSource.cpp; sourceTree = "<group>"; };
 		26A541233BC6F736E758F718 /* ofxJSONElement.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxJSONElement.h; path = ../../../addons/ofxJSON/src/ofxJSONElement.h; sourceTree = SOURCE_ROOT; };
 		26AB0210200138BB001BB541 /* ConsciousCompetence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConsciousCompetence.cpp; sourceTree = "<group>"; };
 		26AB0211200138BB001BB541 /* ConsciousCompetence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsciousCompetence.h; sourceTree = "<group>"; };
@@ -683,6 +720,31 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				2675CE192005FC7B00203033 /* MovingWordsSource.cpp */,
+				2675CE182005FC7B00203033 /* MovingWordsSource.h */,
+				2673F5B72003DEA6005E1515 /* FairyGarden.cpp */,
+				2673F5B82003DEA6005E1515 /* FairyGarden.h */,
+				2673F5A42003CE4C005E1515 /* AbstractSource.cpp */,
+				2673F5A52003CE4C005E1515 /* AbstractSource.h */,
+				2673F5A12003CE4C005E1515 /* BlackSource.cpp */,
+				2673F5AA2003CE4D005E1515 /* BlackSource.h */,
+				2673F5A22003CE4C005E1515 /* DepthSquaresSource.cpp */,
+				2673F59A2003CE4B005E1515 /* DepthSquaresSource.h */,
+				2673F5AB2003CE4D005E1515 /* FlashSource.cpp */,
+				2673F5A02003CE4C005E1515 /* FlashSource.h */,
+				2673F59D2003CE4C005E1515 /* LineMoveSource.cpp */,
+				2673F5982003CE4B005E1515 /* LineMoveSource.h */,
+				2673F5992003CE4B005E1515 /* Macros.h */,
+				2673F5A32003CE4C005E1515 /* ParticlesSource.cpp */,
+				2673F59B2003CE4B005E1515 /* ParticlesSource.h */,
+				2673F5A72003CE4C005E1515 /* SimpleLinesSource.cpp */,
+				2673F59C2003CE4B005E1515 /* SimpleLinesSource.h */,
+				2673F5A82003CE4C005E1515 /* SquidSource.cpp */,
+				2673F5A62003CE4C005E1515 /* SquidSource.h */,
+				2673F59E2003CE4C005E1515 /* TendrilsSource.cpp */,
+				2673F5AC2003CE4D005E1515 /* TendrilsSource.h */,
+				2673F59F2003CE4C005E1515 /* WhiteSource.cpp */,
+				2673F5A92003CE4C005E1515 /* WhiteSource.h */,
 				2673F5952003C786005E1515 /* ConflictingResolutions.cpp */,
 				2673F5962003C786005E1515 /* ConflictingResolutions.h */,
 				26AB021720016A74001BB541 /* UnconsciousCompetence.cpp */,
@@ -891,6 +953,7 @@
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				856AA354D08AB4B323081444 /* ofxBaseGui.cpp in Sources */,
+				2673F5AE2003CE4D005E1515 /* TendrilsSource.cpp in Sources */,
 				B56FE57CC35806596D38118C /* ofxSliderGroup.cpp in Sources */,
 				1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */,
 				5CBB2AB3A60F65431D7B555D /* ofxButton.cpp in Sources */,
@@ -907,8 +970,10 @@
 				2673F5972003C786005E1515 /* ConflictingResolutions.cpp in Sources */,
 				DB8FC60C7512DB810C92625B /* DirectoryWatcher.cpp in Sources */,
 				EA700B09626C8413C92EF860 /* Gui.cpp in Sources */,
+				2673F5AD2003CE4D005E1515 /* LineMoveSource.cpp in Sources */,
 				F06AE014F869282B7F7CE84C /* ScaleWidget.cpp in Sources */,
 				8E8F94DC506856A4E92FBA8A /* LayerPanelWidget.cpp in Sources */,
+				2673F5B52003CE4D005E1515 /* SquidSource.cpp in Sources */,
 				9CAA3B0DFD59840998C832DA /* TextureHighlightWidget.cpp in Sources */,
 				FB03F0A6D7866DFC55F519EB /* SourcesEditorWidget.cpp in Sources */,
 				274AEF0299D77E27C0C5B205 /* ProjectionEditorWidget.cpp in Sources */,
@@ -930,12 +995,14 @@
 				7002E598586957E5F20E69A7 /* SelVertexCmd.cpp in Sources */,
 				06765053D7BFBBEB43E77B23 /* StartDragSurfaceCmd.cpp in Sources */,
 				800748EF057A284D9DA82F60 /* SelPrevTexCoordCmd.cpp in Sources */,
+				2673F5B62003CE4D005E1515 /* FlashSource.cpp in Sources */,
 				D88BA6D139757ED4E1669796 /* AddGridRowCmd.cpp in Sources */,
 				93760FE8B10EBD4081251E10 /* CmdManager.cpp in Sources */,
 				6438655B2AE4DDA2743241EC /* ToggleAnimatedSourceCmd.cpp in Sources */,
 				25F5CD753AF35B53464E56AE /* MvTexCoordCmd.cpp in Sources */,
 				D61A46C1800537BA43C7884F /* DuplicateSurfaceCmd.cpp in Sources */,
 				A75658250711ADE2C05FC781 /* MvLayerDnCmd.cpp in Sources */,
+				2673F5B42003CE4D005E1515 /* SimpleLinesSource.cpp in Sources */,
 				B01F972DDDA5F21EF4C8B99D /* RmSurfaceCmd.cpp in Sources */,
 				6056983B92E88B475FF04299 /* MvSelectionCmd.cpp in Sources */,
 				23963D6D8F0085D5DD2DF394 /* TogglePerspectiveCmd.cpp in Sources */,
@@ -946,12 +1013,14 @@
 				973F560586CB3735581265E7 /* DeselectTexCoordCmd.cpp in Sources */,
 				26AB021520014DBB001BB541 /* Incompetence.cpp in Sources */,
 				67FF225B68ECC1942C833BFE /* SelNextSurfaceCmd.cpp in Sources */,
+				2673F5B22003CE4D005E1515 /* ParticlesSource.cpp in Sources */,
 				B1EEE5A7EC1876072BF8F7FE /* AddSurfaceCmd.cpp in Sources */,
 				60C8089351E49CF344577098 /* SelNextTexCoordCmd.cpp in Sources */,
 				8CA6C92E3D4F91750BC469FF /* MvAllTexCoordsCmd.cpp in Sources */,
 				C8D7FA44AA0565654A681157 /* DeselectSurfaceCmd.cpp in Sources */,
 				28F5415281F8D09BBC098355 /* TranslateCanvasCmd.cpp in Sources */,
 				90DE06EA59944C1BEA539719 /* SetApplicationModeCmd.cpp in Sources */,
+				2673F5AF2003CE4D005E1515 /* WhiteSource.cpp in Sources */,
 				82643E358DF270B9EC939699 /* RmGridColCmd.cpp in Sources */,
 				845DC872C79A75F7B5FABC02 /* MvSurfaceVertCmd.cpp in Sources */,
 				26AB0212200138BB001BB541 /* ConsciousCompetence.cpp in Sources */,
@@ -964,22 +1033,27 @@
 				9F968AD3A115328F4BFE5D71 /* BaseSurface.cpp in Sources */,
 				85649EB44DE8F0A3BF8430F9 /* SurfaceManager.cpp in Sources */,
 				C0EB2D2E383BA9DE417ADB38 /* TriangleSurface.cpp in Sources */,
+				2675CE1A2005FC7B00203033 /* MovingWordsSource.cpp in Sources */,
 				9C194C9F4ACD67CD61FBD30D /* HexagonSurface.cpp in Sources */,
 				63DB0907B2ACDF9E6F2D9925 /* GridWarpSurface.cpp in Sources */,
+				2673F5B02003CE4D005E1515 /* BlackSource.cpp in Sources */,
 				B27F2ADC894A4C463E892AFE /* SurfaceFactory.cpp in Sources */,
 				2A9AFA74E0EF07E58AC11382 /* QuadSurface.cpp in Sources */,
 				3B90107DB9BF4857E357FCA8 /* ofxPiMapper.cpp in Sources */,
 				42BCE929D520D8872171239A /* CircleJoint.cpp in Sources */,
 				868F230C6074263277ED9B07 /* BaseJoint.cpp in Sources */,
 				1F4453EA1589AD79F4B34493 /* RadioList.cpp in Sources */,
+				2673F5B92003DEA6005E1515 /* FairyGarden.cpp in Sources */,
 				21B18AC78EBFC1FD28C614D5 /* TextureMappingMode.cpp in Sources */,
 				C4D6DA9B890E612343FD059F /* ApplicationBaseMode.cpp in Sources */,
 				4A53BFBA57F4AD16FB9D2D24 /* PresentationMode.cpp in Sources */,
 				42AB7CD7DFB89209AB951942 /* ProjectionMappingMode.cpp in Sources */,
 				AA98F23DF9897F2241EF3968 /* SourceSelectionMode.cpp in Sources */,
+				2673F5B12003CE4D005E1515 /* DepthSquaresSource.cpp in Sources */,
 				2E9E05C9FFCE15172A701335 /* SettingsLoader.cpp in Sources */,
 				401140F3B7FA4412935BB121 /* Application.cpp in Sources */,
 				63B57AC5BF4EF088491E0317 /* ofxXmlSettings.cpp in Sources */,
+				2673F5B32003CE4D005E1515 /* AbstractSource.cpp in Sources */,
 				5A4349E9754D6FA14C0F2A3A /* tinyxmlparser.cpp in Sources */,
 				9D44DC88EF9E7991B4A09951 /* tinyxmlerror.cpp in Sources */,
 				933A2227713C720CEFF80FD9 /* tinyxml.cpp in Sources */,
