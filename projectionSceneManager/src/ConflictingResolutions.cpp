@@ -44,7 +44,7 @@ void ConflictingResolutions::setName(string _name){
     name = _name;
 }
 
-void UnconsciousCompetence::setImage(string b) {
+void ConflictingResolutions::setImage(string b) {
     face.load(b);
 }
 
