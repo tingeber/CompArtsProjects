@@ -82,7 +82,7 @@ void ConsciousCompetence::draw(){
 
     ofPopStyle();
     
-   // printHelperText(); // helper info printed at mouse position
+   printHelperText(); // helper info printed at mouse position
 }
 
 
