@@ -1,5 +1,59 @@
+/* full sequence */
+/* [
+    { "preset": 4, "duration": 1500.0 },
+    { "preset": 5, "duration": 10000.0 },
+    { "preset": 6, "duration": 1500.0 },
+    { "preset": 7, "duration": 10000.0 },
+    { "preset": 8, "duration": 1500.0 },
+    { "preset": 9, "duration": 10000.0 },
+    { "preset": 10, "duration": 16000.0 },
+    { "preset": 11, "duration": 16000.0 },
+    { "preset": 12, "duration": 16000.0 },
+    { "preset": 0, "duration": 10000.0 },
+    { "preset": 1, "duration": 10000.0 },
+    { "preset": 2, "duration": 10000.0 },
+    { "preset": 3, "duration": 10000.0 },
+    { "preset": 13, "duration": 53000 },
+    { "preset": 14, "duration": 50000 },
+    { "preset": 15, "duration": 60000 }
+] */
+
+/* scene 1 */
+/* [
+    { "preset": 4, "duration": 1500.0 },
+    { "preset": 5, "duration": 10000.0 },
+    { "preset": 6, "duration": 1500.0 },
+    { "preset": 7, "duration": 10000.0 },
+    { "preset": 8, "duration": 1500.0 },
+    { "preset": 9, "duration": 10000.0 }
+] */
+
+/* scene 2 */
+/* [
+    { "preset": 10, "duration": 16000.0 },
+    { "preset": 11, "duration": 16000.0 },
+    { "preset": 12, "duration": 16000.0 }
+] */
+
+/* scene 3 */
+/* [
+    { "preset": 0, "duration": 10000.0 },
+    { "preset": 1, "duration": 10000.0 },
+    { "preset": 2, "duration": 10000.0 },
+    { "preset": 3, "duration": 10000.0 }
+] */
+/* [
+    { "preset": 2, "duration": 10000.0 },
+    { "preset": 3, "duration": 10000.0 }
+] */
+
+/* no sequence */
 [
-    { "preset": 0, "duration": 53000 },
-    { "preset": 1, "duration": 50000 },
-    { "preset": 2, "duration": 60000 }
+    { "preset": 2, "duration": -1 },
+    { "preset": 1, "duration": -1 },
+    { "preset": 4, "duration": -1 },
+    { "preset": 3, "duration": -1 },
+    { "preset": 5, "duration": -1 },
+    { "preset": 9, "duration": -1 },
+    { "preset": 6, "duration": -1 }
 ]
