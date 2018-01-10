@@ -52,9 +52,58 @@ void ofApp::setup(){
     
     conflictingResolutions = new ConflictingResolutions();
     conflictingResolutions->setup();
-    piMapper.registerFboSource(conflictingResolutions);
-    
+    piMapper.registerFboSource(conflictingResolutions0);
+    unconsciousCompetence3->setName("resolutions 0");
+    unconsciousCompetence3->setImage("0.jpeg");
+	
+    conflictingResolutions = new ConflictingResolutions();
+    conflictingResolutions->setup();
+    piMapper.registerFboSource(conflictingResolutions1);
+    unconsciousCompetence3->setName("resolutions 1");
+    unconsciousCompetence3->setImage("1.jpeg");
+	
+    conflictingResolutions = new ConflictingResolutions();
+    conflictingResolutions->setup();
+    piMapper.registerFboSource(conflictingResolutions2);
+    unconsciousCompetence3->setName("resolutions 2");
+    unconsciousCompetence3->setImage("2.jpeg");
+
+    conflictingResolutions = new ConflictingResolutions();
+    conflictingResolutions->setup();
+    piMapper.registerFboSource(conflictingResolutions3);
+    unconsciousCompetence3->setName("resolutions 3");
+    unconsciousCompetence3->setImage("3.jpeg");
  
+    conflictingResolutions = new ConflictingResolutions();
+    conflictingResolutions->setup();
+    piMapper.registerFboSource(conflictingResolutions4);
+    unconsciousCompetence3->setName("resolutions 4");
+    unconsciousCompetence3->setImage("4.jpeg");
+	
+    conflictingResolutions = new ConflictingResolutions();
+    conflictingResolutions->setup();
+    piMapper.registerFboSource(conflictingResolutions5);
+    unconsciousCompetence3->setName("resolutions 5");
+    unconsciousCompetence3->setImage("5.jpeg");
+	
+    conflictingResolutions = new ConflictingResolutions();
+    conflictingResolutions->setup();
+    piMapper.registerFboSource(conflictingResolutions6);
+    unconsciousCompetence3->setName("resolutions 6");
+    unconsciousCompetence3->setImage("6.jpeg");
+	
+    conflictingResolutions = new ConflictingResolutions();
+    conflictingResolutions->setup();
+    piMapper.registerFboSource(conflictingResolutions7);
+    unconsciousCompetence3->setName("resolutions 7");
+    unconsciousCompetence3->setImage("7.jpeg");
+	
+    conflictingResolutions = new ConflictingResolutions();
+    conflictingResolutions->setup();
+    piMapper.registerFboSource(conflictingResolutions8);
+    unconsciousCompetence3->setName("resolutions 8");
+    unconsciousCompetence3->setImage("8.jpeg");
+
     
     piMapper.setup();
 
