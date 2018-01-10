@@ -12,6 +12,7 @@ public:
     void draw();
     
     void setName(string);
+    void setImage(string b)
     
     void reset();
     
