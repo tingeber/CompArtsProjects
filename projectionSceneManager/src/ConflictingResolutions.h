@@ -9,6 +9,11 @@ public:
     void setup();
     void update();
     void draw();
+
+    void setName(string);
+    void setImage(string b)
+    
+    void reset();
     void keyPressed(int key);
     void clearWindow();
     void detection();
