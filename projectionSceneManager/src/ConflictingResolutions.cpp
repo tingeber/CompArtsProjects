@@ -29,23 +29,28 @@ void ConflictingResolutions::setup(){
     spacingX = fbo->getWidth()/numOfXTiles;
     spacingY = fbo->getHeight()/numOfYTiles;
 
-    // initial source data
-    pixelBorder = 1.125;
-    faceIt = ofRandom(0,9);
-    face.load(ofToString(faceIt)+".jpeg");
 
+    setImage();
+    
+    growth = true;
+    
+    ofClear(0);
+}
     // initialize interaction
     growth = false;
     analyze = false;
     sceneFactor = 0;
     elapsed = ofGetElapsedTimef();
 
-
 }
 
 //--------------------------------------------------------------
 void ConflictingResolutions::setName(string _name){
     name = _name;
+}
+
+void ConflictingResolutions::setImage(string b) {
+    face.load(b);
 }
 
 //--------------------------------------------------------------
@@ -55,9 +60,11 @@ void ConflictingResolutions::update(){
 
     // load random image on restart
     if(elapsed == 0 || elapsed == 1){
-        faceIt = ofRandom(0,9);
+
         face.clear();
-        face.load(ofToString(faceIt)+".jpeg");
+//         faceIt = ofRandom(0,9);
+//         face.load(ofToString(faceIt)+".jpeg");
+        setImage();
     }
 
     if(elapsed < 30){
