@@ -30,8 +30,9 @@ void ConflictingResolutions::setup(){
     spacingX = fbo->getWidth()/numOfXTiles;
     spacingY = fbo->getHeight()/numOfYTiles;
 
-    face.load("ts-eliot-crop.jpeg");
-
+//     face.load("ts-eliot-crop.jpeg");
+    setImage();
+    
     growth = true;
     
     ofClear(0);
@@ -43,8 +44,65 @@ void ConflictingResolutions::setName(string _name){
     name = _name;
 }
 
+void UnconsciousCompetence::setImage(string b) {
+    face.load(b);
+}
+
 //--------------------------------------------------------------
 void ConflictingResolutions::update(){
+    
+    elapsed = ofGetElapsedTimef();
+
+    // load random image on restart
+    if(elapsed == 0 || elapsed == 1){
+        face.clear();
+//         faceIt = ofRandom(0,9);
+//         face.load(ofToString(faceIt)+".jpeg");
+        setImage();
+    }
+
+    if(elapsed < 30){
+        // detection - 0-30 (30 sec)
+        detection();
+        if(elapsed > 12 && elapsed < 20){
+            // visualize analysis
+            analyze = elapsed % 3 ==0 ? true : false;
+        }
+        if(elapsed > 20 && elapsed < 30){
+            // visualize analysis
+            analyze = elapsed % 2 ==0 ? true : false;
+        }
+    }else if(elapsed > 29 && elapsed < 80){
+        // recognition - 30 - 70 (40 sec)
+        recognition();
+        // visualize analysis
+        if(elapsed > 65){
+            analyze = elapsed % 3 ==0 ? true : false;
+        }
+    }else{
+    // identification - 70 - 160 (90)
+        identification();
+        if(elapsed >= 130){
+            growth = true;
+        }
+    }
+
+
+    // prepare next classification
+    if(ofGetElapsedTimeMillis() >= 0 && ofGetElapsedTimeMillis() < 60){
+        changeScene();
+    }
+    if(ofGetElapsedTimeMillis() >= 30000 && ofGetElapsedTimeMillis() < 30060){
+        changeScene();
+    }
+    if(ofGetElapsedTimeMillis() >= 80000 && ofGetElapsedTimeMillis() < 80060){
+        changeScene();
+    }
+    if(elapsed >= 160){
+        growth = false;
+        changeScene();
+        ofResetElapsedTimeCounter();
+    }
 }
 
 //--------------------------------------------------------------
